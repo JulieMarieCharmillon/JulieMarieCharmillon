@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @JulieMarieCharmillon
-- 👀 I’m interested in a lot of different things from coding to watercolor painting.
+
 - 🌱 I’m currently learning Django Framework, web development and Data analysis
 
 

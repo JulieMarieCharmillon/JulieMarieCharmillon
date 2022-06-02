@@ -1,13 +1,3 @@
-/* =================================
-------------------------------------
-  Civic - CV Resume
-  Version: 1.0
- ------------------------------------
- ====================================*/
-
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
 html,
 body {
 	height: 100%;
@@ -38,6 +28,10 @@ p {
 	font-size: 18px;
 	color: #808181;
 	line-height: 1.8;
+}
+
+a{
+	color:#5c5d64;
 }
 
 img {
@@ -112,8 +106,36 @@ ol {
   Common Elements
 --------------------------*/
 
-
 /* Site Buttons */
+/* customised bootstrap buttons */
+.btn{
+    color: #d69c86;
+    border-color: #d69c86;
+}
+
+.btn:hover{
+    background-color: #d69c86;
+    border-color: #d69c86;
+}
+.form-control:focus {
+    border-color: #e2beb1;
+    box-shadow: 0 0 0 0.2rem #e2beb1;
+}
+.btn:visited{
+    background-color: #d69c86 ! important;
+    border-color: #d69c86;
+}
+.btn:focus{
+    border-color: #d69c86;
+    box-shadow: 0 0 0 0.2rem #e2beb1;
+}
+
+.btn:not(:disabled):not(:disabled):active{
+    background-color: #d69c86 ! important;
+    border-color: #d69c86;
+    box-shadow: 0 0 0 0.2rem #e2beb1;
+} 
+/* customised bootstrap buttons ends*/
 
 /* -------button down ------*/
 /* .button-div{
@@ -136,200 +158,14 @@ ol {
 } */
 /* -------button down END------*/
 
-.site-btn {
-	display: inline-block;
-	text-transform: uppercase;
-	font-size: 12px;
-	min-width: 213px;
-	min-height: 20px;
-	text-align: center;
-	padding: 20px 10px 15px;
-	position: relative;
-	background-color: #fff;
-	margin-right: 10px;
-	border: 2px solid #40424a;
-	color: #40424a;
-	font-weight: 700;
-}
-
-.site-btn:hover {
-	color: #40424a;
-}
-
-.circle-progress {
-	text-align: center;
-	display: inline-block;
-}
-
-.circle-progress .prog-circle {
-	margin-bottom: -155px;
-}
-
-.circle-progress canvas {
-	-webkit-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	transform: rotate(90deg);
-}
-
-.circle-progress .progress-info {
-	background: #f2f7f8;
-	width: 127px;
-	height: 127px;
-	border-radius: 150px;
-	margin: 0 auto;
-	padding-top: 45px;
-}
-
-.circle-progress .progress-info h2 {
-	font-size: 36px;
-	color: #40424a !important;
-}
-
-.circle-progress .prog-title {
-	text-align: center;
-	margin-top: 3rem;
-}
-
-.circle-progress .prog-title h3 {
-	font-size: 16px;
-	text-transform: uppercase;
-}
-
-.circle-progress .prog-title p {
-	font-size: 15px;
-	color: #808181 !important;
-}
-
-/* Image Popup */
-.img-popup-warp .mfp-content,
-.img-popup-warp.mfp-ready.mfp-removing .mfp-content {
-	opacity: 0;
-	-webkit-transform: scale(0.8);
-	-ms-transform: scale(0.8);
-	transform: scale(0.8);
-	-webkit-transition: all 0.4s;
-	-o-transition: all 0.4s;
-	transition: all 0.4s;
-}
-
-.img-popup-warp.mfp-ready .mfp-content {
-	opacity: 1;
-	-webkit-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
-}
-
-/* Fact box */
-.fact-box {
-	height: 375px;
-	display: table;
-	width: 100%;
-	background: #40424a;
-}
-
-.fact-box.trans {
-	background-color: transparent;
-}
-
-.fact-box .fact-content {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-}
-
-.fact-box .fact-content img {
-	width: 60px;
-	margin-bottom: 30px;
-}
-
-.fact-box .fact-content h2 {
-	font-size: 36px;
-	color: #fff;
-}
-
-.fact-box .fact-content p {
-	color: #fff;
-	margin-bottom: 0;
-}
-
-/* Porgess bar */
-.single-progress-item {
-	margin-bottom: 35px;
-	position: relative;
-}
-
-.single-progress-item p {
-	color: #40424a;
-	margin-bottom: 0;
-	font-weight: 600;
-}
-
-.progress-bar-style {
-	display: block;
-	height: 2px;
-	position: relative;
-	width: 100%;
-	margin-bottom: 10px;
-}
-
-.bar-inner {
-	position: absolute;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background: #40424a;
-}
-
-.bar-inner span {
-	position: absolute;
-	right: 0;
-	bottom: -30px;
-	color: #40424a;
-	font-weight: 600;
-}
-
-/* Progress dots */
-.language-progress {
-	max-width: 280px;
-	list-style: none;
-}
-
-.language-progress li {
-	font-size: 24px;
-	position: relative;
-	padding-right: 150px;
-	margin-bottom: 30px;
-}
-
-
-.language-progress .lan-prog {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-
-.language-progress .lan-prog span {
-	width: 12px;
-	height: 12px;
-	display: inline-block;
-	margin-right: 18px;
-	border-radius: 12px;
-	background: #40424a;
-}
-
-.language-progress .lan-prog span.fade-ele {
-	background: #cacaca;
-}
-
 /* Icon Box */
-
-
 .icon-box {
 	text-align: center;
 	display: inline-block;
 	margin-right: 60px;
 	min-width: 8rem;
 }
+
 
 /*---------------------
 	Header section
@@ -343,24 +179,24 @@ ol {
 }
 
 /*---------------------
-	Hero section
+	presentation section
 -----------------------*/
-.hero-section {
+.presentation-section {
 	background-color: #F2D9D0;
 }
 
-.hero-text {
+.presentation-text {
 	margin-bottom:  1.25rem;
 }
 
-.hero-text h2 {
+.presentation-text h2 {
 	font-size: 6rem;
 	letter-spacing: 0.6rem;
 	line-height: normal;
 	margin-bottom: 1.25rem;
 }
 
-.hero-text p {
+.presentation-text p {
 	font-size: 1.8rem;
 	line-height: 1.3;
 }
@@ -374,7 +210,7 @@ ol {
 	margin-top: 3rem;
 }
 
-.hero-image {
+.presentation-image {
 	margin-top: 2rem;
 }
 
@@ -383,9 +219,6 @@ ol {
 	Resume section
 ----------------------*/
 .resume-section.with-bg {
-	/* background-image: url(../img/resume-bg.jpg);
-	background-repeat: no-repeat;
-	background-size: cover; */
 	background-color: #F2D9D0;
 }
 
@@ -469,6 +302,7 @@ ol {
 	background-color: transparent;
 }
 
+/* autofill modifications */
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus,
@@ -512,36 +346,6 @@ input, select, textarea{
     font-size: medium;
 }
 
-.btn{
-    color: #d69c86;
-    border-color: #d69c86;
-}
-
-.btn:hover{
-    background-color: #d69c86;
-    border-color: #d69c86;
-}
-.form-control:focus {
-    border-color: #e2beb1;
-    box-shadow: 0 0 0 0.2rem #e2beb1;
-}
-.btn:visited{
-    background-color: #d69c86 ! important;
-    border-color: #d69c86;
-}
-.btn:focus{
-    border-color: #d69c86;
-    box-shadow: 0 0 0 0.2rem #e2beb1;
-}
-
-.btn:not(:disabled):not(:disabled):active{
-    background-color: #d69c86 ! important;
-    border-color: #d69c86;
-    box-shadow: 0 0 0 0.2rem #e2beb1;
-} 
-
-
-
 .social-section{
 	background-color: white;
 }
@@ -568,14 +372,14 @@ input, select, textarea{
 ==============================*/
 
 @media only screen and (max-width: 1600px) {
-	.hero-text h2 {
+	.presentation-text h2 {
 		font-size: 6rem;
 	}
 }
 
 @media only screen and (max-width: 1366px) and (min-width: 1200px) {
 
-	.hero-text h2 {
+	.presentation-text h2 {
 		font-size: 5rem;
 		letter-spacing: 0.4rem;
 	}
@@ -589,7 +393,7 @@ input, select, textarea{
 /* Medium screen : 992px. */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
-	.hero-text h2 {
+	.presentation-text h2 {
 		font-size: 4rem;
 		letter-spacing: 0.4rem;
 	}
@@ -617,7 +421,7 @@ input, select, textarea{
 
 /* Large Mobile :480px. */
 @media only screen and (max-width: 767px) {
-	.hero-section{
+	.presentation-section{
 		padding: 2rem 1.5rem !important;
 	}
 
@@ -634,11 +438,11 @@ input, select, textarea{
 		text-align: center;
 	}
 
-	.hero-text h2 {
+	.presentation-text h2 {
 		font-size: 4rem;
 		letter-spacing: normal;
 	}
-	.hero-text p{
+	.presentation-text p{
 		font-size: 1.4rem;
 		line-height: 1.2;
 	}
@@ -660,19 +464,19 @@ input, select, textarea{
 }
 
 @media only screen and (min-width: 588px) and (max-width: 768px) {
-	.hero-text h2 {
+	.presentation-text h2 {
 		font-size: 5rem;
 		letter-spacing: 0.5rem;
 	}
 }
 @media only screen and (min-width: 476px) and (max-width: 587px) {
-	.hero-text h2 {
+	.presentation-text h2 {
 		font-size: 4rem;
 		letter-spacing: 0.5rem;
 	}
 }
 @media only screen and (min-width: 330px) and (max-width: 475px) {
-	.hero-text h2 {
+	.presentation-text h2 {
 		font-size: 3rem;
 		letter-spacing: normal;
 	}
@@ -681,7 +485,7 @@ input, select, textarea{
 
 /* small Mobile :320px. */
 @media only screen and (max-width: 350px) {
-	.hero-text h2 {
+	.presentation-text h2 {
 		font-size: 3rem;
 		letter-spacing: normal;
 	}
